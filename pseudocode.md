@@ -96,12 +96,12 @@ Start: Start the Program
 
 Init
     Mix ()
-        stir container until ingredients are homogenous
+        WHILE contents NOT Homogenous stir contents
 
     Gigi Paste (object used in marinade and Makhani Gravy)
         grind 3 oz ginger
         grind 3 oz garlic
-        combine into a paste
+        mix ()
 
     chop (function to be used later)
         WHILE ingredient size > 1cm, /2
@@ -113,10 +113,15 @@ Init
 
     add (function to be used later)
     
-    spices (array to be used later)
-        spices = [4tsp turmeric, 4 tsp coriander, 4 tsp cumin, 2 tbs garam masala, 8 pods ground cardamom, 2 tbs ground black pepper, 3 tbs kashmiri pepper]
+    spices = [4tsp turmeric, 4 tsp coriander, 4 tsp cumin, 2 tbs garam masala, 8 pods ground cardamom, 2 tbs ground black pepper, 3 tbs kashmiri pepper]
 
+    pan = 9.5 inch skillet
 
+    pot = 2 quart saucepan
+
+    oven = 
+
+    tandoor = 
 Tandoori Chicken (object)
         Chicken Prep (function)
             while chicken size > 1 inch, /2
@@ -176,3 +181,4 @@ Combine
         Cook on low until chicken reaches 165F
     Serve
         ladle chicken tikka masala to plate
+END
