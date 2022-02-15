@@ -97,7 +97,7 @@ Start: Start the Program
 Init
     Mix ()
         stir container until ingredients are homogenous
-        
+
     Gigi Paste (object used in marinade and Makhani Gravy)
         grind 3 oz ginger
         grind 3 oz garlic
@@ -154,7 +154,7 @@ Makhani Gravy (object)
         Add Spices
         While no smoke, Shake Pan             
         Add Gigi Paste 
-        Mix
+        Mix ()
         chop (onion)
         chop (chilis)
         fry (onion)
@@ -168,11 +168,11 @@ Makhani Gravy (object)
         add 4 tbs salt
         add 2 tbs sugar
         add 1 tbs garam masala
-        mix
+        mix ()
 
 Combine
         Add chicken to gravy
-        Stir
+        Mix ()
         Cook on low until chicken reaches 165F
     Serve
         ladle chicken tikka masala to plate
