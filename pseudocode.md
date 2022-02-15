@@ -95,6 +95,9 @@ Chicken Tikka Masala
 Start: Start the Program
 
 Init
+    Mix ()
+        stir container until ingredients are homogenous
+        
     Gigi Paste (object used in marinade and Makhani Gravy)
         grind 3 oz ginger
         grind 3 oz garlic
@@ -152,10 +155,10 @@ Makhani Gravy (object)
         While no smoke, Shake Pan             
         Add Gigi Paste 
         Mix
-        chop (function) onion
-        chop (function) chilis
-        fry (function) onion
-        fry (function) chilis
+        chop (onion)
+        chop (chilis)
+        fry (onion)
+        fry (chilis) 
         add tomatoes
             While tomatoes in can > 0, remove 1 tomato, crush in hand, add to pan
         add tomato juice
