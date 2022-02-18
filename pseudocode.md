@@ -94,24 +94,25 @@ Chicken Tikka Masala
 Chicken Tikka Masala
 Start: Start the Program
 
-Init
-    Mix ()
-        WHILE contents NOT Homogenous stir contents
+Init (mise en place)
+    FUNCTION Mix ()
+        WHILE contents NOT Homogenous, stir contents
 
-    Gigi Paste (object used in marinade and Makhani Gravy)
+    FUNCTION Gigi Paste ()
         grind 3 oz ginger
         grind 3 oz garlic
         mix ()
 
-    chop (function to be used later)
+    FUNCTION chop (ingredient)
         WHILE ingredient size > 1cm, /2
 
-    fry(ingredient) (function to be used later)
+    FUNCTION fry(ingredient) (function to be used later)
         Add 1 tbs oil to pan
         Add ingredient to pan
         cook, stirring constantly, until softened
 
-    add (function to be used later)
+    FUNCTION add (ingredient)
+        Combine ingredient with other items
     
     ARRAY spices = [4tsp turmeric, 4 tsp coriander, 4 tsp cumin, 2 tbs garam masala, 8 pods ground cardamom, 2 tbs ground black pepper, 3 tbs kashmiri pepper]
     Class Cookware
@@ -122,10 +123,15 @@ Init
         pot = 
         size 2 quart 
         type: saucepan
-    Class 
+    Class Ovens
         oven = 
+        temp: 450
+        material: metal
 
     tandoor = 
+        temp: 400
+        material: clay
+
 OBJECT Tandoori Chicken
         FUNCTION Chicken Prep
             while chicken size > 1 inch, /2
@@ -158,10 +164,10 @@ OBJECT Tandoori Chicken
                 broil until 160F
                 remove from oven
 
-OBJECT Makhani Gravy
+FUNCTION Makhani Gravy
         Pan
-        Add Spices
-        While no smoke, Shake Pan             
+        Add ARRAY Spices
+        WHILE no smoke, Shake Pan             
         Add Gigi Paste 
         Mix ()
         chop (onion)
@@ -179,10 +185,10 @@ OBJECT Makhani Gravy
         add 1 tbs garam masala
         mix ()
 
-Combine
+FUNCTION Combine
         Add chicken to gravy
         Mix ()
-        Cook on low until chicken reaches 165F
-    Serve
+        FOR (Chicken temp < 165F) stir
+FUNCTION Serve
         ladle chicken tikka masala to plate
 END
