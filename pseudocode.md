@@ -113,21 +113,25 @@ Init
 
     add (function to be used later)
     
-    spices = [4tsp turmeric, 4 tsp coriander, 4 tsp cumin, 2 tbs garam masala, 8 pods ground cardamom, 2 tbs ground black pepper, 3 tbs kashmiri pepper]
+    ARRAY spices = [4tsp turmeric, 4 tsp coriander, 4 tsp cumin, 2 tbs garam masala, 8 pods ground cardamom, 2 tbs ground black pepper, 3 tbs kashmiri pepper]
+    Class Cookware
+        pan = 
+        size: 9.5 inch 
+        type: skillet
 
-    pan = 9.5 inch skillet
-
-    pot = 2 quart saucepan
-
-    oven = 
+        pot = 
+        size 2 quart 
+        type: saucepan
+    Class 
+        oven = 
 
     tandoor = 
-Tandoori Chicken (object)
-        Chicken Prep (function)
+OBJECT Tandoori Chicken
+        FUNCTION Chicken Prep
             while chicken size > 1 inch, /2
             This = chicken piece
 
-        Marinade (object)
+        FUNCTION Make Marinade
             Gigi Paste (instance)
             2 lb dahi yoghurt
             add spices
@@ -136,7 +140,7 @@ Tandoori Chicken (object)
             If restTime < 2hrs, rest
             ELSE proceed to roast chicken
         
-        Roast Chicken
+        FUNCTION Roast Chicken
             Remove chicken from marinade
                 While Chicken remains, -1 chicken piece from bowl
                 IF marinade is falling off, shake chicken
@@ -154,7 +158,7 @@ Tandoori Chicken (object)
                 broil until 160F
                 remove from oven
 
-Makhani Gravy (object)
+OBJECT Makhani Gravy
         Pan
         Add Spices
         While no smoke, Shake Pan             
